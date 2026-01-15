@@ -1,39 +1,3 @@
-# Azure Container Registry Terraform Module
-
-Terraform module to create a Container Registry.
-
-# Table of Contents
-
-- [Azure Resource Naming Convention](#azure-resource-naming-convention)
-    - [Format](#Format)
-    - [Components](#Components)
-- [Requirements](#requirements)
-- [Providers](#providers)
-- [Modules](#modules)
-- [Resources](#resources)
-- [Inputs](#inputs)
-- [Outputs](#outputs)
-
-## Azure Resource Naming Convention
-
-Resource names should clearly indicate their type, workload, environment, and region. Using a consistent naming convention ensures clarity, uniformity, and easy identification across all repositories.
-
-#### Format
-
-```
-<resource_prefix>-<app_or_project>-<environment>-<region>-<optional_unique_suffix>
-```
-
-#### Components
-
-| **Component**           | **Description**                                                                      | **Example**             |
-|--------------------------|--------------------------------------------------------------------------------------|-------------------------|
-| `resource_prefix`        | Short abbreviation for the resource type.                                           | `rg` (Resource Group)   |
-| `app_or_project`         | Identifier for the application or project.                                          | `qoh`           |
-| `environment`            | Environment where the resource is deployed (`prod`, `dev`, `test`, etc.).           | `prod`                 |
-| `region`                 | Azure region where the resource resides (e.g., `cus` for `centralus`).              | `cus`                  |
-| `optional_unique_suffix` | Optional unique string for ensuring name uniqueness, often random or incremental.    | `abcd`, `a42n`                 |
-
 ## Requirements
 
 | Name | Version |
